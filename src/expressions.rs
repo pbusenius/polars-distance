@@ -28,9 +28,7 @@ fn distance(inputs: &[Series]) -> PolarsResult<Series> {
 }
 
 fn to_values(ca: &ChunkedArray<Float64Type>) -> &[f64] {
-    let val = ca.cont_slice().expect("No nulls expected");
-
-    return val;
+    ca.cont_slice().expect("No nulls expected")
 }
 
 fn geodesic_distance(lat_a: f64, lng_a: f64, lat_b: f64, lng_b: f64) -> Option<f64> {

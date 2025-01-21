@@ -1,5 +1,5 @@
 import polars as pl
-from polars_distance import distance
+from polars_geodesic_distance import distance
 
 
 def test_piglatinnify():

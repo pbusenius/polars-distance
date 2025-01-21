@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [tool.maturin]
-module-name = "polars_distance._internal"
+module-name = "polars_geodesic_distance._internal"
 
 [[tool.mypy.overrides]]
 module = "polars.utils.udfs"

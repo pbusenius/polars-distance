@@ -15,8 +15,8 @@ install-release:
 pre-commit:
 	cargo +nightly fmt --all && cargo clippy --all-features
 	.venv/bin/python -m ruff check . --fix --exit-non-zero-on-fix
-	.venv/bin/python -m ruff format polars_distance tests
-	.venv/bin/mypy polars_distance tests
+	.venv/bin/python -m ruff format polars_geodesic_distance tests
+	.venv/bin/mypy polars_geodesic_distance tests
 
 test:
 	.venv/bin/python -m pytest tests

@@ -116,7 +116,7 @@ wheels = [
 ]
 
 [[package]]
-name = "polars-distance"
+name = "polars-geodesic-distance"
 source = { editable = "." }
 dependencies = [
     { name = "maturin" },

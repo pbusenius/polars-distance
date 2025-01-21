@@ -1,1 +1,1 @@
-# polars-distance
+# polars-geodesic-distance
